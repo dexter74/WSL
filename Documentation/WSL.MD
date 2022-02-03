@@ -1,13 +1,24 @@
 ### Utilisation 
 ```
+```
+
+
+### I. Arguments pour l’exécution des fichiers binaires Linux
+
+``
 wsl.exe [Argument] [Options...] [Ligne de commande]
-```
+``
 
 
-### I. Lancer une commande sur la Distribution
 ```powershell
-wsl.exe
+wsl.exe                              Si aucune ligne de commande n’est fournie, wsl.exe démarre l’interpréteur de commandes par défaut.
+ --exec, -e <Ligne de commande>      Exécutez la commande spécifiée sans utiliser le shell Linux par défaut.
+   --cd <Répertoire>                 Définit le répertoire spécifié comme répertoire de travail actuel.
+   --distribution, -d <Distribution> Exécutez la distribution spécifiée.
+   --user, -u <Nom d’utilisateur>    Éxécute en tant qu’utilisateur spécifié.
+   --system    
 ```
+
 
 ### II. Arguments de gestion du sous-système Windows pour Linux :
 ```powershell
@@ -25,14 +36,22 @@ wsl.exe
 ```
 
 
+### III. Arguments pour la gestion des distributions dans le sous-système Windows pour Linux :
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 ```powershell
 wsl.exe
- --exec, -e <Ligne de commande>          Exécutez la commande spécifiée sans utiliser le shell Linux par défaut.
-  --cd <Répertoire>                      Définit le répertoire spécifié comme répertoire de travail actuel.
-  --distribution, -d <Distribution>      Exécutez la distribution spécifiée.
-  --user, -u <Nom d’utilisateur>         Éxécute en tant qu’utilisateur spécifié.
-  --system                               Lance un Shell pour la distribution du système.
+                           Lance un Shell pour la distribution du système.
 ```
